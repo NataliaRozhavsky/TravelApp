@@ -3,8 +3,30 @@ body {
 }
 
 .App {
+    width: 90%;
+    background-color: lightblue;
+    margin: auto;
+    .header {
+        font-size: 25px;
+    }
     .page-content {
         display: flex;
-        width: 500px;
+        justify-content: space-between;
+        width: 100%;
+        .dest-list {
+            width: 400px;
+            background-color: lightgreen;
+            height: 400px;
+            .dest-item {
+                cursor: pointer;
+                &:hover {
+                    background-color: lightcyan;
+                }
+            }
+        }
+        .dest-details {
+            background-color: lightyellow;
+            width: 100%;
+        }
     }
 }

@@ -2,9 +2,10 @@ import React, { Component } from 'react';
 
 class Dest extends Component {
   render() {
+    const {city, cityIndex, selectCity} = this.props;
     return (
-      <div className="Dest">
-        {this.props.city}
+      <div className="dest-item" onClick={() => {selectCity(cityIndex)}} >
+        {city}
       </div>
     );
   }
