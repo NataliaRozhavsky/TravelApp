@@ -9,6 +9,7 @@ class DestList extends Component {
                         cityIndex={index} 
                         selectCity={this.props.handleSelectCity} 
                         city={item.cityName} 
+                        isSelected={index===this.props.selectedIndex}
                     />
         })
     }

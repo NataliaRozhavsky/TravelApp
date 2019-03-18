@@ -19,6 +19,9 @@ body {
             height: 400px;
             .dest-item {
                 cursor: pointer;
+                &.selected {
+                    background-color:yellowgreen;
+                }
                 &:hover {
                     background-color: lightcyan;
                 }

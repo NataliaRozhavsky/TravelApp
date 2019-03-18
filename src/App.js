@@ -28,7 +28,7 @@ class App extends Component {
           <Header/>
           <div className="page-content">
             <DestDetails selectedCity={selectedCity} />
-            <DestList handleSelectCity={this.updateSelectedCity} data={data} />
+            <DestList handleSelectCity={this.updateSelectedCity} data={data} selectedIndex={this.state.selectedCity}/>
           </div>
       </div>
     );
