@@ -1,5 +1,6 @@
 [
     {"cityName": "Riga", "description": "Best city ever"},
     {"cityName": "Helsinky", "description": "very cold"},
-    {"cityName": "Haifa", "description": "very close"}
+    {"cityName": "Haifa", "description": "very close"},
+    {"cityName": "Venice", "description": "Romantic city on the water"}
 ]

@@ -4,6 +4,7 @@ import DestList from './components/DestList';
 import DestDetails from './components/DestDetails';
 import './style/style.scss';
 import data from './mock/data';
+import DestMenu from './components/DestMenu';
 
 class App extends Component {
   constructor(props) {
@@ -28,6 +29,7 @@ class App extends Component {
           <Header/>
           <div className="page-content">
             <DestDetails selectedCity={selectedCity} />
+            <DestMenu />
             <DestList handleSelectCity={this.updateSelectedCity} data={data} selectedIndex={this.state.selectedCity}/>
           </div>
       </div>

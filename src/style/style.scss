@@ -27,6 +27,20 @@ body {
                 }
             }
         }
+        .dest-menu {
+            width: 150px;
+            background-color:lightpink;
+            height: 400px;
+            .dest-menu-item {
+                cursor: pointer;
+                &.selected {
+                    background-color:rgb(205, 50, 128);
+                }
+                &:hover {
+                    background-color: rgb(255, 224, 252);
+                }
+            }
+        }
         .dest-details {
             background-color: lightyellow;
             width: 100%;
