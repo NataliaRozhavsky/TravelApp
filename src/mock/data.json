@@ -1,6 +1,6 @@
 [
-    {"cityName": "Riga", "description": "Best city ever"},
-    {"cityName": "Helsinky", "description": "very cold"},
-    {"cityName": "Haifa", "description": "very close"},
-    {"cityName": "Venice", "description": "Romantic city on the water"}
+    {"cityName": "Riga","flightInfo":"wizz air","attractions":[{"title":"old city","description":"churches and buildings"},{"title":"jurmala","description":"baltic sea"}] ,"description": "Best city ever"},
+    {"cityName": "Helsinky","flightInfo":"air Finland","attractions":[{"title":"sauna","description":"hot water steam"}], "description": "very cold"},
+    {"cityName": "Haifa","flightInfo":"by car or train","attractions":[{"title":"gardens","description":"bahamian gardens"}], "description": "very close"},
+    {"cityName": "Venice","flightInfo":"easy jet","attractions":[{"title":"san marco","description":"squre near the shore"}], "description": "Romantic city on the water"}
 ]

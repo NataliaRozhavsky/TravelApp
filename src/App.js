@@ -10,14 +10,17 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      selectedCity: 0
+      selectedCity: 0,
+      selectedMenuItem: 0
     }
   }
 
   updateSelectedCity = (cityIndex) => {
-    this.setState({selectedCity: cityIndex});
+    this.setState({selectedCity: cityIndex, selectedMenuItem: 0});
   }
-
+  updateSelectedMenuItem = (menuItem) => {
+    this.setState({selectedMenuItem: menuItem});
+  }
   render() {
     const selectedCity = data[this.state.selectedCity];
     if (!selectedCity) {
@@ -28,8 +31,8 @@ class App extends Component {
       <div className="App">
           <Header/>
           <div className="page-content">
-            <DestDetails selectedCity={selectedCity} />
-            <DestMenu />
+            <DestDetails selectedCity={selectedCity} selectedMenuItem={this.state.selectedMenuItem} />
+            <DestMenu handleSelectMenuItem={this.updateSelectedMenuItem}/>
             <DestList handleSelectCity={this.updateSelectedCity} data={data} selectedIndex={this.state.selectedCity}/>
           </div>
       </div>
